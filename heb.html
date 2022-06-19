@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="libary/bootstrap/bootstrap.min.css">
+
+</head>
+<body>
+<center>
+    <h1>mail sender</h1>
+    <br>
+    <input type="text" id="to" name="to" placeholder="to" onchange="f()">
+    <br><br>
+    <form id="form" method="POST">
+        <input type="text" name="name" placeholder="name" required>
+        <br><br>
+        <input type="email" name="form" placeholder="form" required>
+        <br><br>
+        <input type="text" name="subject" placeholder="subject" required>
+        <br><br>
+        <input type="text" name="body" placeholder="body" required>
+        <br><br>
+
+        <button type="submit" class="btn btn-dark">Send</button>
+    </form>
+</center>
+<script>
+function f() {
+    document.getElementById("form").action="https://formsubmit.co/"+document.getElementById("to").value;
+
+}
+</script>
+<style>
+    *{
+        background-color:#00d0ff;
+    }
+    input{
+        border: 0;
+        background-color: #1b1e21;
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        stroke: #0B85FF;
+    }
+</style>
+</body>
+</html>
