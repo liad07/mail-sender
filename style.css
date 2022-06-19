@@ -1,0 +1,11 @@
+    *{
+        background-color:#00d0ff;
+    }
+    input{
+        border: 0;
+        background-color: #1b1e21;
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        stroke: #0B85FF;
+    }
